@@ -7,7 +7,7 @@
     </div>
     <div class="row">
         <div class="col-2">
-            <br/>
+            <br />
         </div>
     </div>
     <div class="row">
@@ -35,3 +35,11 @@
 </div>
 <script src="~/js/signalr/dist/browser/signalr.js"></script>
 <script src="~/js/chat.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#sendButton").click(function () {
+            $("textArea").val("");
+        });
+    });
+</script>
